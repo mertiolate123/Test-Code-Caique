@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+
+int main(void){
+    int cadastrado, ativo, logado;
+    char opçao;
+    
+    cadastrado = ativo = logado = 0;
+    
+printf("Deseja cadastrar sua conta?: S/N \n");
+scanf(" %c", &opçao);
+if (opçao == 'S') {
+cadastrado = 1;
+printf("\nconta cadastrada.\n");
+}
+
+printf("\nDeseja ativar sua conta?: S/N\n");
+  scanf(" %c", &opçao);
+  if (opçao == 'S') {
+  ativo = 1;
+printf("\nConta ativada.\n");
+}
+ 
+  
+  printf("\ndeseja logar na sua conta?: S/N\n");
+  scanf(" %c", &opçao);
+  if (opçao == 'S') {
+  logado = 1;
+  printf("\nConta logada com sucesso!");
+  }
+ 
+if ((cadastrado == 1) && (ativo == 1) && (logado == 1)) {
+    printf("\nseja bem vindo.\n");
+}
+    else 
+{ 
+ printf("\nalgo deu errado.\n");   
+} 
+ return 0;
+}
